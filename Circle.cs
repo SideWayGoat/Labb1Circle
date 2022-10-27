@@ -6,6 +6,7 @@ namespace Labb1Circle
     {
         public float pi = 3.141f;
         public int radius;
+        
         public Circle(int _Radius)
         {
             this.radius = _Radius;
@@ -13,7 +14,15 @@ namespace Labb1Circle
 
         public float getArea()
         {
-            return radius * radius * pi;
+            return (radius * radius) * pi;
+        }
+        public float getCircumference()
+        {
+            return (radius + radius) * pi;
+        }
+        public float sphereArea()
+        {
+            return 4 * pi * radius * radius;
         }
     }
 }

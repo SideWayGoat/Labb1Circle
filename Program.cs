@@ -7,10 +7,13 @@ namespace Labb1Circle
         static void Main(string[] args)
         {
             Circle area5 = new Circle(5);
-            Console.WriteLine(area5.getArea());
+            Console.WriteLine(area5.getArea() + " CM");
 
-            Circle area6 = new Circle(6);
-            Console.WriteLine(area6.getArea());
+            Circle around = new Circle(5);
+            Console.WriteLine(around.getCircumference() + " CM");
+
+            Circle one = new Circle(5);
+            Console.WriteLine(one.sphereArea() + " CM");
         }
     }
 }
