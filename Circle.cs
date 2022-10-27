@@ -20,9 +20,13 @@ namespace Labb1Circle
         {
             return (radius + radius) * pi;
         }
-        public float sphereArea()
+        public float surfaceArea()
         {
             return 4 * pi * radius * radius;
+        }
+        public float sphereVolume()
+        {
+            return (float)(4.0 / 3 * pi * radius * radius * radius);
         }
     }
 }
